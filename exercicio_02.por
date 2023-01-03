@@ -4,28 +4,32 @@ inclua biblioteca Matematica --> Mat
 
   funcao inicio() {
     
-//Primeira Quest„o
+//Primeira Quest√£o
     inteiro numero
 
-    escreva("Digite um n˙mero inteiro para sabermos se È PAR ou ÕMPAR e POSITIVO ou NEGATIVO: \n")
+    escreva("Digite um n√∫mero inteiro para sabermos se √© PAR ou √çMPAR e POSITIVO ou NEGATIVO: \n")
     leia(numero)
 
+
     se(numero%2 == 0 e numero>0){
-      escreva("O N˙mero ", numero," È par e positivo!")
-    } senao se(numero%2 ==0 e numero<0){
-      escreva("O N˙mero ", numero," È par e negativo!")
-    } senao se(numero%2 <> 0 e numero>0){
-      escreva("O N˙mero ", numero," È Ìmpar e positivo!")
-    } senao se(numero%2 <> 0 e numero<0){
-      escreva("O N˙mero ", numero," È Ìmpar e negativo!")
-    } senao{
-      escreva("O N˙mero ", numero," È neutro")
+      escreva("O N√∫mero ", numero," √© par e positivo!")
+
+      senao se(numero%2 ==0 e numero<0){
+      escreva("O N√∫mero ", numero," √© par e negativo!")} 
+
+      senao se(numero%2 != 0 e numero>0){
+      escreva("O N√∫mero ", numero," √© √≠mpar e positivo!")} 
+
+      senao se(numero%2 != 0 e numero<0){
+      escreva("O N√∫mero ", numero," √© √≠mpar e negativo!")} 
+     senao{
+        escreva("O N√∫mero ", numero," √© neutro")
     }
 
-//Segunda Quest„o
+//Segunda Quest√£o
   inteiro opcao, quantidade 
 
-  escreva("Digite a opÁ„o desejada: ")
+  escreva("Digite a op√ß√£o desejada: ")
   escreva("\n 1 - Cachorro-quente,\n 2 - X-Salada,\n 3 - X-Bacon,\n 4 - Bauru,\n 5 - Refrigerante,\n 6 - Suco de laranja\n ** ")
   leia(opcao)
   escreva("\n Compreendi. Informe agora a quantidade desejada:\n ** ")
@@ -58,29 +62,29 @@ inclua biblioteca Matematica --> Mat
         escreva("Valor total: R$ ",quantidade * 13.00)
 				pare
 			caso contrario:
-				escreva("OpÁ„o inv·lida!")
+				escreva("Op√ß√£o inv√°lida!")
 
-//Terceira Quest„o
+//Terceira Quest√£o
   inteiro idade
 
   escreva("Digite a sua idade: ")
   leia(idade)
 
   se(idade>=16 e idade<18){
-    escreva("A pessoa est· apta a votar e o voto È facultativo. ")
+    escreva("A pessoa est√° apta a votar e o voto √© facultativo. ")
     } senao se (idade>=18 e idade<65){
-    escreva("A pessoa est· apta a votar e o voto È obrigatÛrio. ")
+    escreva("A pessoa est√° apta a votar e o voto √© obrigat√≥rio. ")
     }senao se(idade>=65){
-      escreva("A pessoa est· apta a votar e o voto È facultativo. ")
+      escreva("A pessoa est√° apta a votar e o voto √© facultativo. ")
     }senao{
-      escreva("A pessoa n„o est· apta a votar.")
+      escreva("A pessoa n√£o est√° apta a votar.")
     }
   }
 
-//Quarta Quest„o
+//Quarta Quest√£o
 
    real salario
-    escreva("Informe o sal·rio: R$ ")
+    escreva("Informe o sal√°rio: R$ ")
     leia(salario)
 
     se(salario<=2000.00){
@@ -94,7 +98,7 @@ inclua biblioteca Matematica --> Mat
     }
 
 
-//Quinta Quest„o
+//Quinta Quest√£o
     cadeia palavra1, palavra2, palavra3
 
     escreva("Digite a primeira palavra\n")
@@ -108,26 +112,26 @@ inclua biblioteca Matematica --> Mat
 
       se(palavra1 == "vertebrado"){
       se(palavra2 == "ave"){
-        se(palavra3=="carnivoro"){escreva("¡guia")}
+        se(palavra3=="carnivoro"){escreva("√Åguia")}
         se(palavra3=="onivoro"){escreva("Pomba")
-        }senao{escreva("N„o identificado")} 
+        }senao{escreva("N√£o identificado")} 
       }
 
       se(palavra2 == "mamifero"){
         se(palavra3=="onivoro"){escreva("Homem")}
         se(palavra3=="herbivoro"){escreva("Vaca")}
-      }senao{escreva("N„o identificado")}
+      }senao{escreva("N√£o identificado")}
     }
     se(palavra1 == "invertebrado"){
       se(palavra2 =="inseto"){
         se(palavra3=="hematofago"){escreva("Pulga")}
         se(palavra3=="herbivoro"){escreva("Lagarta")}
-      }senao{escreva("N„o identificado")}
+      }senao{escreva("N√£o identificado")}
 
       se(palavra2=="anelideo"){
         se(palavra3=="hematofago"){escreva("Sanguessuga")}
         se(palavra3=="onivoro"){escreva("Minhoca")}
-      senao{escreva("N„o identificado")}
+      senao{escreva("N√£o identificado")}
       }
 
   }
