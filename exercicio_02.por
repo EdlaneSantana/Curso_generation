@@ -99,7 +99,7 @@ inclua biblioteca Matematica --> Mat
 
 
 //Quinta Questão
-    cadeia palavra1, palavra2, palavra3
+        cadeia palavra1, palavra2, palavra3
 
     escreva("Digite a primeira palavra\n")
     leia(palavra1)
@@ -114,25 +114,23 @@ inclua biblioteca Matematica --> Mat
       se(palavra2 == "ave"){
         se(palavra3=="carnivoro"){escreva("Águia")}
         se(palavra3=="onivoro"){escreva("Pomba")
-        }senao{escreva("Não identificado")} 
+        }
       }
 
       se(palavra2 == "mamifero"){
         se(palavra3=="onivoro"){escreva("Homem")}
         se(palavra3=="herbivoro"){escreva("Vaca")}
-      }senao{escreva("Não identificado")}
+      }
     }
     se(palavra1 == "invertebrado"){
       se(palavra2 =="inseto"){
         se(palavra3=="hematofago"){escreva("Pulga")}
         se(palavra3=="herbivoro"){escreva("Lagarta")}
-      }senao{escreva("Não identificado")}
+      }
 
       se(palavra2=="anelideo"){
         se(palavra3=="hematofago"){escreva("Sanguessuga")}
         se(palavra3=="onivoro"){escreva("Minhoca")}
-      senao{escreva("Não identificado")}
       }
-
   }
 }
