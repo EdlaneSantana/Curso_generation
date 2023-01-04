@@ -1,14 +1,14 @@
 programa {
   funcao inicio() {
 
-//PRIMEIRA QUESTÃO
+//PRIMEIRA QUESTÃƒO
     inteiro multiplicando
     inteiro contador=1
  
-        escreva("Digite um nÚmero (1 - 10): ")
+        escreva("Digite um nÃšmero (1 - 10): ")
         leia(multiplicando)
 
-        se (multiplicando<1 ou multiplicando>10){escreva("Digite um número inteiro entre 1 e 10")}
+        se (multiplicando<1 ou multiplicando>10){escreva("Digite um nÃºmero inteiro entre 1 e 10")}
         se(multiplicando>=1 e multiplicando<=10){
             enquanto(contador<=10)
             {
@@ -17,37 +17,32 @@ programa {
             }
         }  
 
-//SEGUNDA QUESTÃO
+//SEGUNDA QUESTÃƒO
 
    inteiro num1 = 0
     inteiro num2 = 1
+     escreva("### Bem-vindo! Vamos verificar se os nÃºmero sÃ£o mÃºltiplos de 3 ou 5 ###\n\n")
 
-     escreva("### Bem-vindo! Vamos verificar se os número são múltiplos de 3 ou 5 ###\n\n")
-
-      para(inteiro contador=1; num2>num1;contador++)
-      {
-        escreva("\nDigite o primeiro número do intervalo:\n")
+       escreva("\nDigite o primeiro nÃºmero do intervalo:\n")
         leia(num1)
-        escreva("\nDigite o último número do intervalo:\n")
+        escreva("\nDigite o Ãºltimo nÃºmero do intervalo:\n")
         leia(num2)
 
-      se(num2>num1){
-        se (num1%5 ==0 e num1%3==0){escreva(num1," é múltiplo de 5 e 3\n")
-          }senao{escreva(num1," não é múltiplo de 5 e 3\n")} 
-        se (num2%5 ==0 e num2%3==0){escreva(num2," é múltiplo de 5 e 3\n")
-          }senao{escreva(num2," não é múltiplo de 5 e 3\n")} 
+    se(num2>num1){
+      para(inteiro contador=num1; contador<=num2;contador++)
+      {
+        se (contador%5 ==0 e contador%3==0){escreva(contador," Ã© mÃºltiplo de 5 e 3\n")
       }
-      }senao{escreva("Intervalo inválido!")}}
+      }senao{escreva("Intervalo invÃ¡lido!")}}
 
-
-//TERCEIRA QUESTÃO
+//TERCEIRA QUESTÃƒO
     inteiro numeros
     inteiro par = 0
     inteiro impar = 0
 
     para(inteiro contador = 1; contador<=10; contador++){
 
-      escreva("Digite o ", contador, "º número: ")
+      escreva("Digite o ", contador, "Âº nÃºmero: ")
       leia(numeros)
 
           se(numeros%2==0 e numeros!=0){
@@ -56,10 +51,10 @@ programa {
           impar++
           }
     } 
-    escreva("\nTotal de número de pares: ", par)
-    escreva("\nTotal de número de ímpares: ", impar)
+    escreva("\nTotal de nÃºmero de pares: ", par)
+    escreva("\nTotal de nÃºmero de Ã­mpares: ", impar)
 
-//QUARTA QUESTÃO
+//QUARTA QUESTÃƒO
     inteiro idade = 0
     inteiro idoso = 0
     inteiro adolescente = 0
@@ -77,7 +72,7 @@ enquanto(idade >=0){
     escreva("\nTTotal de pessoas maiores de 50 anos: ", idoso)
 
 
-//QUINTA QUESTÃO
+//QUINTA QUESTÃƒO
     inteiro idade, sexo
     inteiro backend = 0
     inteiro mulherFrontend = 0
@@ -99,36 +94,36 @@ enquanto(idade >=0){
       se(categoria == 3 e sexo == 1 e idade>40){homemMobile++}
       se(categoria == 4 e sexo == 2 e idade<30 e idade>=0){mulherFull++}
 
-    escreva("Deseja continuar a leitura dos dados? Digite S para sim ou N para não:\n")
+    escreva("Deseja continuar a leitura dos dados? Digite S para sim ou N para nÃ£o:\n")
     leia(resp)
 
     }
-    escreva("\nO número de pessoas desenvolvedoras Backend é ", backend)
-    escreva("\nO número de mulheres desenvolvedoras Frontend é ", mulherFrontend)
-    escreva("\nO número de homens desenvolvedores Mobile maiores de 40 anos é ", homemMobile)
-    escreva("\nO número de mulheres desenvolvedoras FullStack menores de 30 anos é ", mulherFull)
+    escreva("\nO nÃºmero de pessoas desenvolvedoras Backend Ã© ", backend)
+    escreva("\nO nÃºmero de mulheres desenvolvedoras Frontend Ã© ", mulherFrontend)
+    escreva("\nO nÃºmero de homens desenvolvedores Mobile maiores de 40 anos Ã© ", homemMobile)
+    escreva("\nO nÃºmero de mulheres desenvolvedoras FullStack menores de 30 anos Ã© ", mulherFull)
 
 
-//SEXTA QUESTÃO
+//SEXTA QUESTÃƒO
     inteiro number = 0
     inteiro auxiliar = 0
 
 faca{
-			escreva("Digite um número: ")
+			escreva("Digite um nÃºmero: ")
 			leia(number)
       se(number>0){
         auxiliar = auxiliar + number}
 		}enquanto(number!=0)
-escreva("\nA soma dos números positivos é: ", auxiliar)
+escreva("\nA soma dos nÃºmeros positivos Ã©: ", auxiliar)
 
-//SÉTIMA QUESTÃO
+//SÃ‰TIMA QUESTÃƒO
     inteiro numInt
     inteiro suporte = 0
     inteiro multiplo = 0
     real media
 
 faca{
-			escreva("Digite um número: ")
+			escreva("Digite um nÃºmero: ")
 			leia(numInt)
 
         se(numInt % 3 == 0 e numInt!=0){
@@ -137,7 +132,7 @@ faca{
 		}enquanto(numInt!=0)
 
     media = suporte / multiplo
-    escreva("\nA media de todos os números múltiplos de 3 é: ", media)
+    escreva("\nA media de todos os nÃºmeros mÃºltiplos de 3 Ã©: ", media)
 
 
   }
