@@ -1,7 +1,7 @@
 programa {
   funcao inicio() {
 
-// PRIMEIRA QUEST√O
+// PRIMEIRA QUEST√ÉO
   inteiro vetor[10] = {2,5,1,3,4,9,7,8,10,6}, i=0, soma = 0
 
   enquanto(i<10){
@@ -17,18 +17,18 @@ programa {
     escreva(vetor[t],"| ")
     }
 
-// SEGUNDA QUEST√O
+// SEGUNDA QUEST√ÉO
   inteiro caixa[10], i=0, y=0, soma =0, tamanho=10
   real media = 0
 
   enquanto(i<tamanho){
-    escreva("Digite o ",i+1,"∞ n˙mero: ")
+    escreva("Digite o ",i+1,"¬∞ n√∫mero: ")
     leia(caixa[i])
     soma+=caixa[i]
     media = soma/tamanho
     i++
   }
-  escreva("\nElementos nos Ìndices Ìmpares: ")
+  escreva("\nElementos nos √≠ndices √≠mpares: ")
     para(y; y<tamanho; y++){
        se(y%2!=0){escreva(caixa[y], " ")}
         }
@@ -39,12 +39,12 @@ programa {
     }
     escreva("\nSoma: ",soma, "\nMedia: ", media, "\n")
 
-// TERCEIRA QUEST√O   
+// TERCEIRA QUEST√ÉO   
     inteiro matriz[3][3],l=0, c=0, k=2, t=0, somaP = 0, somaS = 0
 
     para(inteiro l=0; l<3; l++){
       para(inteiro c=0; c<3; c++){
-        escreva("Digite um valor para a posiÁ„o [", l, "][", c, "]: ")
+        escreva("Digite um valor para a posi√ß√£o [", l, "][", c, "]: ")
 				leia(matriz[l][c]) 
         }
         }
@@ -58,19 +58,36 @@ programa {
         }
 			}
 
-    escreva("\nElementos da Diagnonal Secund·ria: ")
+    escreva("\nElementos da Diagnonal Secund√°ria: ")
     para(inteiro contador = 0; contador<3; contador++){
       escreva(matriz[contador][k-contador], " ")
       somaS+=matriz[contador][k-contador]
     }  
 
-    escreva("\nSoma dos Elementos da Diagonal Principal: ", somaP, "\nSoma dos Elementos da Diagonal Secund·ria: ", somaS, "\n")
+    escreva("\nSoma dos Elementos da Diagonal Principal: ", somaP, "\nSoma dos Elementos da Diagonal Secund√°ria: ", somaS, "\n")
 
 
 
-//QUARTA QUEST√O
-
-
+//QUARTA QUEST√ÉO
+       real matriz[10][4], soma, media[10]
+  
+     para(inteiro l=0; l<10; l++){
+      para(inteiro c=0; c<4; c++){
+       escreva("Digite um valor para a posi√ß√£o [", l, "][", c, "]: ")
+			leia(matriz[l][c]) 
+        }
+        }
+      para( l = 0; l<10; l++){
+      soma=0
+        para( c = 0; c<4;c++){
+          soma+=matriz[l][c]
+        }
+        media[l]=soma/4
+      }
+    escreva("\nMedia: ")
+    para(inteiro r=0;r<10;r++){
+      escreva(media[r], " ")
+    }
 
 
   }
