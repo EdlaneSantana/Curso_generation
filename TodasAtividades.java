@@ -155,7 +155,7 @@ sejam múltiplos de 3. */
         do{
             System.out.print("Digite um número: ");
             numero6 = leia.nextInt();
-            if(numero6 % 3 == 0 ) {
+            if(numero6 % 3 == 0 && numero6 != 0) {
                 soma6 += numero6;
                 k++;
             }
